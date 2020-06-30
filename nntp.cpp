@@ -157,7 +157,7 @@ int fetchnews(void)
 
    if (!testmode)
    {
-      genfname(newsgroupsfile, "TMP", tempfilename);
+      genfname(newsgroupsfile, "tmp", tempfilename);
 
       listf2 = _fsopen(tempfilename, "w", SH_DENYWR);
       if (listf2==NULL)
@@ -323,7 +323,7 @@ int fetchnews(void)
       logprintf("There are %ld new messages (%ld-%ld) in this newsgroup.\n",
                 msgcount, msgfirst, msglast);
 
-      filenum = genfname(soupdir, "MSG", filename);
+      filenum = genfname(soupdir, "msg", filename);
       fp = _fsopen(filename, "wb", SH_DENYWR);
       if (fp==NULL)
       {
