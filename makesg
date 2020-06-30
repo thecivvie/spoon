@@ -1,0 +1,2 @@
+#!/bin/bash
+g++ config.cpp  keyboard.cpp  nntp.cpp  pop.cpp  smtp.cpp  socket.cpp  spoon.cpp  -o spoon
